@@ -1,7 +1,7 @@
 {
-	"name": "@tfpkgr/npm-template",
+	"name": "@tfpkgr/cipher",
 	"version": "0.0.0",
-	"description": "Package description",
+	"description": "A minimal, class-based crypto utility for encryption, decryption, hashing, and key-pair generation.",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.mts",
@@ -14,11 +14,11 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/tfpkgr/npm-template.git"
+		"url": "git+https://github.com/tfpkgr/cipher.git"
 	},
 	"keywords": [
 		"tfpkgr",
-		"npm-template"
+		"cipher"
 	],
 	"author": "tfpkgr",
 	"publishConfig": {
@@ -36,9 +36,9 @@
 	],
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/tfpkgr/npm-template/issues"
+		"url": "https://github.com/tfpkgr/cipher/issues"
 	},
-	"homepage": "https://github.com/tfpkgr/npm-template#readme",
+	"homepage": "https://github.com/tfpkgr/cipher#readme",
 	"devDependencies": {
 		"@types/node": "^22.14.1",
 		"gts": "^6.0.2",
