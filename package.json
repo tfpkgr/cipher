@@ -1,0 +1,48 @@
+{
+	"name": "@tfpkgr/npm-template",
+	"version": "0.0.0",
+	"description": "Package description",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.mts",
+	"scripts": {
+		"build": "rm -rf dist && npx tsup --clean && npx tsup --dts --format esm",
+		"define-exports": "node ./scripts/define-exports.cjs",
+		"lint": "gts lint",
+		"clean": "gts clean",
+		"fix": "gts fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tfpkgr/npm-template.git"
+	},
+	"keywords": [
+		"tfpkgr",
+		"npm-template"
+	],
+	"author": "tfpkgr",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com",
+		"access": "public",
+		"tag": "latest"
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"files": [
+		"dist",
+		"LICENSE",
+		"README.md"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/tfpkgr/npm-template/issues"
+	},
+	"homepage": "https://github.com/tfpkgr/npm-template#readme",
+	"devDependencies": {
+		"@types/node": "^22.14.1",
+		"gts": "^6.0.2",
+		"tsup": "^8.4.0",
+		"typescript": "^5.8.3"
+	}
+}

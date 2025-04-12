@@ -1,0 +1,35 @@
+{
+	"extends": "./node_modules/gts/tsconfig-google.json",
+	"compilerOptions": {
+		"rootDir": ".",
+		"outDir": "dist",
+		"strict": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowJs": false,
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"declaration": true,
+		"declarationMap": true,
+		"sourceMap": true,
+		"target": "ESNext",
+		"lib": [
+			"ESNext",
+			"DOM"
+		],
+		"resolveJsonModule": true,
+		"typeRoots": [
+			"node_modules/@types",
+			"./src/types",
+			"./src/typings"
+		],
+	},
+	"include": [
+		"./src/**/*.ts",
+		"./tsup.config.ts"
+	],
+	"exclude": [
+		"dist",
+		"node_modules",
+	]
+}
